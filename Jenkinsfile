@@ -2,9 +2,9 @@ pipeline {
    agent any
 
    stages {
-      stage('Clone sources') {
+      stage('Terraform plan') {
          steps {
-            echo 'Hello World'
+            terraform plan --var-file=/home/centos/azpoc/first/terraform.tfvars
          }
       }
    }
