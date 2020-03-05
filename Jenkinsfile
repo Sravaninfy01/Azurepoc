@@ -4,7 +4,7 @@ pipeline {
    stages {
       stage('Terraform plan') {
          steps {
-            terraform plan --var-file=/home/centos/azpoc/first/terraform.tfvars
+            sh "terraform plan --var-file=/home/centos/azpoc/first/terraform.tfvars"
          }
       }
    }
