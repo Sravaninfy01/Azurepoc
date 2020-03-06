@@ -8,7 +8,8 @@ pipeline {
            sh 'echo "hello, maven"'
             String hi = 'hello'
             sh 'echo "hi"'
-            sh 'echo $hi'
+            echo hi
+            println hi
              
          }
       }
