@@ -6,14 +6,15 @@ pipeline {
          steps {
             
            sh 'echo "hello, maven"'
-            sh 'terraform init'
+            //sh 'terraform init'
             sh 'echo "hi"'
+            echo hi
              
          }
       }
       stage('Terraform plan') {
          steps {
-            sh "terraform plan --var-file=/home/centos/azpoc/first/terraform.tfvars"
+           // sh "terraform plan --var-file=/home/centos/azpoc/first/terraform.tfvars"
             
          }
       }
