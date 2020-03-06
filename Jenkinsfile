@@ -5,9 +5,9 @@ pipeline {
       stage('Terraform init') {
          steps {
             
-            echo 'hello, maven'
+           sh 'echo "hello, maven"'
             sh 'terraform init'
-            echo 'hi'
+            sh 'echo "hi"'
              
          }
       }
