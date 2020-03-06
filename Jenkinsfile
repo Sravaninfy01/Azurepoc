@@ -4,8 +4,8 @@ pipeline {
    stages {
       stage('Terraform init') {
          steps {
-            String myparam = "Hi"
-            println("adsfadsf");
+            
+            echo("adsfadsf");
             sh "terraform init"
              
          }
