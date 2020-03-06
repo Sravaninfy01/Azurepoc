@@ -6,9 +6,9 @@ pipeline {
          steps {
             
            sh 'echo "hello, maven"'
-            
+            String hi = 'hello'
             sh 'echo "hi"'
-            echo hi
+            sh 'echo $hi'
              
          }
       }
