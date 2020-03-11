@@ -1,5 +1,4 @@
-pipeline {
-   agent any
+agent any
 
    stages {
       stage('Terraform init') {
@@ -14,4 +13,3 @@ pipeline {
       }
       
    }
-}
