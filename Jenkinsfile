@@ -7,7 +7,7 @@ pipeline {
             
            sh 'echo "hello, maven"'
 
-            sh 'echo "hi"'
+            sh "The branch is ${params.branch}"
            
              
          }
