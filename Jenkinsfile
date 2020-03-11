@@ -1,15 +1,8 @@
-agent any
+node {
 
-   stages {
-      stage('Terraform init') {
-         steps {
-            
-           sh 'echo "hello, maven"'
-
-            echo "The branch is ${params.branch}"
+   stage('Terraform init') {
+   echo "The branch is ${params.branch}"
            
              
          }
       }
-      
-   }
